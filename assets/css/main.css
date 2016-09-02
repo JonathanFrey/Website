@@ -741,11 +741,9 @@
 /* Basic */
 
 	body {
-        background: #e4eae8; /* Old browsers */
-        background: -moz-linear-gradient(top, #e4eae8 0%, #c7d3d1 22%, #b8c8c5 33%, #b1c1be 50%, #a9bbb8 67%, #809491 82%, #595959 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #e4eae8 0%,#c7d3d1 22%,#b8c8c5 33%,#b1c1be 50%,#a9bbb8 67%,#809491 82%,#595959 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #e4eae8 0%,#c7d3d1 22%,#b8c8c5 33%,#b1c1be 50%,#a9bbb8 67%,#809491 82%,#595959 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4eae8', endColorstr='#595959',GradientType=0 ); /* IE6-9 */
+        background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-repeat: repeat, no-repeat;
+		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
