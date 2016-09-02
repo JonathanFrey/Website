@@ -1437,6 +1437,21 @@
             50% { opacity:0; }
             100% { opacity:1; }
         }
+        
+        #subtitle1 {
+            -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+        }
+        
+        #space1 {
+            -webkit-animation-delay: 1.75s;
+            animation-delay: 1.75s;
+        }
+        
+        #subtitle2 {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
 
 	}
 
