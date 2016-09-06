@@ -1,11 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i");
 @import url("font-awesome.min.css");
-
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -747,10 +741,10 @@
 /* Basic */
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+        background-image: url("images/overlay.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Merriweather Sans', sans-serif;
 		font-weight: 300;
 		color: #777777;
 	}
@@ -767,7 +761,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Merriweather Sans', sans-serif;
 		font-weight: 300;
 		color: #777777;
 	}
@@ -937,10 +931,10 @@
 
 		.image.centered {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 auto;
 		}
 
-			.image.centered img {
+			img .image .centered {
 				margin: 0 auto;
 				width: auto;
 			}
@@ -1074,6 +1068,7 @@
 	#main {
 		position: relative;
 		overflow: hidden;
+        border-radius: 1em;
 	}
 
 	.panel {
@@ -1085,6 +1080,7 @@
 	#me .pic {
 		position: relative;
 		display: block;
+        border-radius: 0em 1.1em 1.1em 0em;
 	}
 
 		#me .pic:before {
@@ -1092,7 +1088,6 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			background: url("images/overlay.png");
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -1425,6 +1420,7 @@
 				padding: 2em 0 0 0;
 				font-size: 0.75em;
 			}
+        
         .typed-cursor{
             opacity: 1;
             -webkit-animation: blink 0.7s infinite;
@@ -1437,7 +1433,58 @@
             50% { opacity:0; }
             100% { opacity:1; }
         }
-
+        
+        #subtitle {
+            -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+        }
+        
+        .display-pane {
+            position:relative;
+            padding: 1em;
+        }
+        
+        .display-padding {
+            padding: 1em;
+        }
+        
+        .display-pane img {
+            height: auto;
+            max-width:100%;
+        }
+        
+        .pane {
+            width:100%;
+            height:100%;
+            opacity: 0;
+            background-color: #000000;
+            color: #FFFFFF;
+            position:absolute;
+            top:0;
+            left:0;
+            display:inline-block;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            text-align:center;
+            padding-top: 45%;
+            -moz-transition: opacity .15s ease-in-out;
+            -webkit-transition: opacity .15s ease-in-out;
+            -ms-transition: opacity .15s ease-in-out;
+            transition: opacity .15s ease-in-out;
+        }
+        
+        .pane-padding {
+            padding-top: 70%;
+        }
+        
+        .display-pane:hover .pane {
+            opacity: 0.7;
+        }
+        
+        .row-center {
+            margin: 0 auto;
+        }
 	}
 
 /* Mobile */
